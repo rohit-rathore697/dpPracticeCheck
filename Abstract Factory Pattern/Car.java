@@ -1,4 +1,4 @@
-package PracticeCheck;
+package com.practice.factory;
 
 public abstract class Car {
 
