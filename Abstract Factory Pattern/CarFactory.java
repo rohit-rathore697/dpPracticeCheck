@@ -1,4 +1,4 @@
-package PracticeCheck;
+package com.practice.factory;
 
 public class CarFactory {
 	public static Car buildCar(CarType model, Location location) {
