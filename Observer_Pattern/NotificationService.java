@@ -20,18 +20,14 @@ public class NotificationService implements INotificationService {
 	public void AddSubscriber(INotificationObserver observer) {
 		// TODO Auto-generated method stub
 		this.observers.add(observer);
-		for (INotificationObserver ob : observers) {
-			System.out.println(ob);
-		}
+		this.NotifySubscriber();
 	}
 
 	@Override
 	public void RemoveSubscriber(INotificationObserver observer) {
 		// TODO Auto-generated method stub
 		this.observers.remove(observer);
-		for (INotificationObserver ob : observers) {
-			System.out.println(ob);
-		}
+		this.NotifySubscriber();
 
 	}
 
